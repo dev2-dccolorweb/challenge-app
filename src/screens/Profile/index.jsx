@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 const IMAGE_SIZE = 100
 const AVATAR = require('./../../assets/images/avatar.png')
-const Details = ({navigation}) => {
+const Profile = ({navigation}) => {
 
     const Field = ({title, value}) => {
         return (
@@ -62,4 +62,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Details
+export default Profile
