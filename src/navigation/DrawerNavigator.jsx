@@ -1,8 +1,8 @@
 import React from 'react'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 
-import Employees from './../screens/Employees'
-import Details from './../screens/Employees/Details'
+import AppNavigator from './AppNavigator'
+// import Details from './../screens/Employees/Details'
 import Profile from './../screens/Profile'
 
 const Drawer = createDrawerNavigator()
@@ -12,7 +12,7 @@ const DrawerNavigator = () => {
         <Drawer.Navigator initialRouteName="Employees">
             <Drawer.Screen 
                 name="Employees" 
-                component={Employees}
+                component={AppNavigator}
                 options={{
                     title: 'Employees',
                 }}/>

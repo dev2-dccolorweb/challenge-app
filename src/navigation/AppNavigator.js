@@ -1,17 +1,17 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack';
 
-import DrawerNavigator from './DrawerNavigator'
+import Employees from './../screens/Employees'
 import Details from './../screens/Employees/Details'
 
 const Stack = createStackNavigator()
 
 const AppNavigator = () => {
     return (
-        <Stack.Navigator initialRouteName="Home">
+        <Stack.Navigator initialRouteName="Home" screenOptions={ { headerShown: false } }>
             <Stack.Screen 
                 name="Home" 
-                component={DrawerNavigator}
+                component={Employees}
                 options={{
                     title: 'Employees',
                 }}/>

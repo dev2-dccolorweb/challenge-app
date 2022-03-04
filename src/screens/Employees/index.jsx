@@ -1,11 +1,14 @@
 import React from 'react'
 import {
+    Text,
     View
 } from 'react-native'
 
 const Employees = ({navigation}) => {
     return (
-        <View></View>
+        <View>
+            <Text>Employees</Text>
+        </View>
     )
 }
 
