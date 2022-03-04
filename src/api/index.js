@@ -1,6 +1,6 @@
 const API_URL = 'https://fakerapi.it/api/v1/persons'
 
-const getEmployees = async () => {
+export const getEmployees = async () => {
     try {
         const jsonResponse = await fetch(`${API_URL}?_quantity=25`, {
             headers: {

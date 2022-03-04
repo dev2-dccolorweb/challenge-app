@@ -1,18 +1,17 @@
 import React from 'react'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 
-import AppNavigator from './AppNavigator'
-// import Details from './../screens/Employees/Details'
+import Employees from './../screens/Employees'
 import Profile from './../screens/Profile'
 
 const Drawer = createDrawerNavigator()
 
 const DrawerNavigator = () => {
     return (
-        <Drawer.Navigator initialRouteName="Employees">
+        <Drawer.Navigator initialRouteName="Employees" >
             <Drawer.Screen 
                 name="Employees" 
-                component={AppNavigator}
+                component={Employees}
                 options={{
                     title: 'Employees',
                 }}/>
